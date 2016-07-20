@@ -1,0 +1,10 @@
+package com.sapient.emp;
+
+public class AddressTest {
+
+	public static void main(String[] args) {
+		Address add1 = new Address(234, "Def Col", "New Delhi" , 110014);
+
+	}
+
+}

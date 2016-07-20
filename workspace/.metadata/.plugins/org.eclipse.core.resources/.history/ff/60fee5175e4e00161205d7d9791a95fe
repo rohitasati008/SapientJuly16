@@ -1,0 +1,20 @@
+package com.sapient.emp;
+
+public class Address {
+	
+	/*Address(int houseNumber, String locality, String city, int pinCode){
+		this.houseNumber = houseNumber;
+		this.locality = locality;
+		this.city = city;
+		this.pinCode = pinCode;
+	}*/
+	int houseNumber;
+	String locality;
+	String city;
+	int pinCode;
+
+	public void printWholeAddress() {
+		System.out.println("House No: " + this.houseNumber + "locality: "+ this.locality + "city: "+ this.city + "Pin Code : "+ this.pinCode);
+	}
+
+}
