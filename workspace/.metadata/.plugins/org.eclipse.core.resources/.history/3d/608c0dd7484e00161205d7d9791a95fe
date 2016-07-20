@@ -1,0 +1,22 @@
+
+public class Employee {
+	
+	int id;
+	String name;
+	String lastname;
+	int age;
+	
+	public boolean isAdult(){
+		if(this.age> 18){
+			return true;
+		}
+		return false;
+	}
+	
+	public static void main(String args[]){
+		Employee emp1 = new Employee();
+		emp.name = "Ravi";
+		System.out.println("Name is " + emp1.name);
+	}
+
+}

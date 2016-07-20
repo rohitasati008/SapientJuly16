@@ -1,0 +1,23 @@
+package com.sapient.emp;
+
+public class EmployeeTest {
+
+
+	public static void main(String args[]){
+		Employee emp1 = new Employee();
+		emp1.id = 1;
+		emp1.name = "Ravi";
+		emp1.lastname = "Sharma";
+		emp1.age = 4;
+		System.out.println("Name is " + emp1.name + "and is adult: " + emp1.isAdult());
+		
+		
+		Employee emp2 = new Employee();
+		emp2.id = 1;
+		emp2.name = "Amit";
+		emp2.lastname = "Yadav";
+		emp2.age = 25;
+		System.out.println("Name is " + emp2.name + "and is adult: " + emp2.isAdult());
+	}
+
+}
