@@ -1,0 +1,9 @@
+class Test{
+	
+	public static void main(String args[]){
+		//String a = args[0]; //"34";
+		int b = 3;
+		int result = a + b;
+		System.out.println("Result is: " + result);
+	}
+}
