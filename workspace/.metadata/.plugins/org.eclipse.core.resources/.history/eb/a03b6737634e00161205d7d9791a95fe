@@ -10,7 +10,6 @@ public class AddressTest {
 		Address add2 = new Address(23, "Jangpura", "New Delhi" , 110014);
 //		add2.printWholeAddress();
 		System.out.println(add2);
-		add2.trimPinCode();
 		
 		Address add3 = new Address();
 		System.out.println(add3);

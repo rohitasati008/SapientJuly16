@@ -18,10 +18,7 @@ public class Address {
 	}
 	
 	public void trimPinCode(){
-		int i;
-		System.out.println(i);
-		
-		String str = "" + this.pinCode;
+		String str;
 		String trimmedValue = str.substring(4);
 		System.out.println("Trimmed Pin Code is " + trimmedValue);
 	}

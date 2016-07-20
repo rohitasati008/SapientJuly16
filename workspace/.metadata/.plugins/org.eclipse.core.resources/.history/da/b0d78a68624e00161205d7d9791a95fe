@@ -12,19 +12,6 @@ public class Address {
 	String locality;
 	String city;
 	int pinCode;
-	
-	public Address(){
-		
-	}
-	
-	public void trimPinCode(){
-		int i;
-		System.out.println(i);
-		
-		String str = "" + this.pinCode;
-		String trimmedValue = str.substring(4);
-		System.out.println("Trimmed Pin Code is " + trimmedValue);
-	}
 
 	public Address(int houseNumber, String locality, String city, int pinCode) {
 		this.houseNumber = houseNumber;
