@@ -1,0 +1,19 @@
+package com.sapient.day2;
+
+public class TestInheritance {
+
+	public static void main(String[] args) {
+		Employee emp = new Employee(1, "Ravi", 10000);
+		emp.incrementSalary(1.1);
+		System.out.println(emp);
+		
+		
+		Manager manager = new Manager(1, "Ravi", 10000);
+		manager.incrementSalary(1.1);
+		manager.approveLeaves();
+		System.out.println(manager);
+		
+
+	}
+
+}

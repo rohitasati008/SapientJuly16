@@ -1,0 +1,10 @@
+package com.sapient.day2;
+
+public class Manager extends Employee{
+	
+	public void approveLeaves(){
+		System.out.println("Additional functinality -- approve leaves");
+	}
+	
+
+}

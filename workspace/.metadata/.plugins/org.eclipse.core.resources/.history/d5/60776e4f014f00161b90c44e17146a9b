@@ -1,0 +1,36 @@
+package com.sapient.day2;
+
+
+class Bank {
+	private double interest;
+	int time;
+	double amount;
+	public Bank(double interest, int time, double amount) {
+		this.interest = interest;
+		this.time = time;
+		this.amount = amount;
+	}
+	
+	public void setInterest(double interest){
+		this.interest = interest;
+	}
+	
+	public double calculateSI(){
+		return (this.amount * this.interest * this.time) / 100;
+	}
+	
+}
+
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+		Bank bank  = new Bank(10, 12, 1000);
+		
+		
+		
+		double si = bank.calculateSI();
+		System.out.println(si);
+			
+	}
+
+}

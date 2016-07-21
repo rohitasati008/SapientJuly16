@@ -1,0 +1,17 @@
+package com.sapient.day2;
+
+public class Manager {
+	
+	public Manager(int id, String name, double salary) {
+
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public void approveLeaves(){
+		System.out.println("Additional functinality -- approve leaves");
+	}
+	
+
+}

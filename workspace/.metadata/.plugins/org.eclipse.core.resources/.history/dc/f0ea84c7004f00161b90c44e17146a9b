@@ -1,0 +1,24 @@
+package com.sapient.day2;
+
+
+class Bank {
+	double interest;
+	int time;
+	double amount;
+	public Bank(double interest, int time, double amount) {
+		this.interest = interest;
+		this.time = time;
+		this.amount = amount;
+	}
+	
+	
+}
+
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

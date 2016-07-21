@@ -1,0 +1,21 @@
+package com.sapient.day2.inheritance;
+
+class Person{	
+}
+class Employee extends Person{
+}
+class Manager extends Employee{
+}
+
+public class TestMoreInheritance {
+
+	public static void main(String[] args) {
+
+		Manager m = new Manager();
+		Employee e = new Manager();
+		Person p = new Manager();
+		
+		Employee pArray[] = {p, e, m, new Person(), new Manager(), new Employee()};
+	}
+
+}

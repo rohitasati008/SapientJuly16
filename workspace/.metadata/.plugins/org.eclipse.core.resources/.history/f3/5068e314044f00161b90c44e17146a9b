@@ -1,0 +1,6 @@
+package com.sapient.day2;
+
+public class Manager extends Employee{
+	
+
+}
