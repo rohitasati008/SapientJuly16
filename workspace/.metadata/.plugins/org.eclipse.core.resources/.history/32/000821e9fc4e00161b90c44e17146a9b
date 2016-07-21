@@ -1,0 +1,10 @@
+package com.sapient.day2;
+
+public class TestIncrementSalary {
+
+	public static void main(String[] args) {
+		Employee emp1  = new Employee(12, "Ravi", 34354.4);
+
+	}
+
+}

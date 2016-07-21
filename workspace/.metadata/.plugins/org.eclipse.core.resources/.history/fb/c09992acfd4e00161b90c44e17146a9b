@@ -1,0 +1,31 @@
+package com.sapient.day2;
+
+public class TestIncrementSalary {
+
+	public static void main(String[] args) {
+		
+		Employee emp1  = new Employee(12, "Ravi", 34354.4);
+		Employee emp2  = new Employee(13, "Priya", 20000.4);
+		Employee employees[] = {emp1, emp2};
+		
+		System.out.println(emp1);
+		
+		emp1.incrementSalary(1.2);
+		
+		System.out.println(emp1);
+		
+		
+		
+//		Increment for one employee
+		/*Employee emp1  = new Employee(12, "Ravi", 34354.4);
+		System.out.println(emp1);
+		
+		emp1.incrementSalary(1.2);
+		
+		System.out.println(emp1);*/
+		
+	
+
+	}
+
+}

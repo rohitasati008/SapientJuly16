@@ -19,6 +19,12 @@ public class Employee {
 	public String lastname;
 	public int age;
 	
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", lastname="
+				+ lastname + ", age=" + age + "]";
+	}
+
 	public boolean isAdult(){
 		if(this.age> 18){
 			return true;

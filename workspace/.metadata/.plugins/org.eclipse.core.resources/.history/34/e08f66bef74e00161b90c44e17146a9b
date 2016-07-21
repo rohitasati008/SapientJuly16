@@ -1,0 +1,11 @@
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		int []scores = {12,3,4,4,56,67,67,67,767};
+		
+		int newscores[] = new int[3];
+
+	}
+
+}
