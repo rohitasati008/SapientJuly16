@@ -1,4 +1,4 @@
-package com.sapient.day2.inheritance;
+/*package com.sapient.day2.inheritance;
 
 class Person{	
 }
@@ -15,3 +15,4 @@ public class TestMoreInheritance {
 	}
 
 }
+*/

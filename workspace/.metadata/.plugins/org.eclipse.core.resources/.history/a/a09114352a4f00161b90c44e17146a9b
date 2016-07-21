@@ -1,0 +1,20 @@
+package com.sapient.day2.inheritance;
+
+public class RegularEmployee extends Employee{
+	
+	
+	public RegularEmployee(int id, String name, double salary) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+
+
+
+	
+
+
+	
+	
+
+}

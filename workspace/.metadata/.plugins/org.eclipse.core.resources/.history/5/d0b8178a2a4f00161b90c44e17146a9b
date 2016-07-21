@@ -1,0 +1,13 @@
+package com.sapient.day2.inheritance;
+
+public class ContractualEmployee extends Employee {
+
+	double ratePerHour;
+	
+	public ContractualEmployee(int id, String name, double ratePerHour) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.ratePerHour = ratePerHour;
+	}
+}

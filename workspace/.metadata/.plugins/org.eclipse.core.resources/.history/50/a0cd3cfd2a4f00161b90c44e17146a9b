@@ -1,0 +1,12 @@
+package com.sapient.day2.inheritance;
+
+public class TestEmployees {
+
+	public static void main(String[] args) {
+
+		RegularEmployee r1 = new RegularEmployee(1, "Ravi", 24233);
+		RegularEmployee r2 = new RegularEmployee(2, "Raj", 24234);
+
+	}
+
+}

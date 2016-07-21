@@ -1,0 +1,7 @@
+package com.sapient.day2.inheritance;
+
+public class RegularEmployee {
+	
+	double salary;
+
+}
