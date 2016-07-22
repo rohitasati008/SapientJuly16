@@ -1,0 +1,6 @@
+package com.sapient.day3;
+
+public interface IBicycle {
+	public abstract void applyBrakes(int decrement);
+	public abstract void speedUp(int increment);
+}

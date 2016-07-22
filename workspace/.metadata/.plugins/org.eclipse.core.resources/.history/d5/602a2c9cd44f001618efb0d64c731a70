@@ -1,0 +1,17 @@
+package com.sapient.day2.inheritance;
+
+class Person{	
+}
+class Employee11 extends Person{
+}
+class Manager extends Employee11{
+}
+
+public class TestMoreInheritance {
+
+	public static void main(String[] args) {
+		Person p = new Employee11();
+		
+	}
+
+}

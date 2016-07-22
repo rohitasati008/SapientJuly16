@@ -1,0 +1,8 @@
+package com.sapient.day3;
+
+public abstract class Bicycle {
+	
+	public abstract void applyBrakes(int decrement);
+	public void speedUp(int increment)
+
+}

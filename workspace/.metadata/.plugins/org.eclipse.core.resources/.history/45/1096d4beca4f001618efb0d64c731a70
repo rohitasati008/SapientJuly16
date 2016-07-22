@@ -1,0 +1,17 @@
+package com.sapient.day3;
+
+public class MountainBiCycle extends Bicycle{
+
+	@Override
+	public void applyBrakes(int decrement) {
+		this.speed = this.speed - (decrement * 2);
+		
+	}
+
+	@Override
+	public void speedUp(int increment) {
+		this.speed = this.speed + (increment * 2);
+		
+	}
+
+}

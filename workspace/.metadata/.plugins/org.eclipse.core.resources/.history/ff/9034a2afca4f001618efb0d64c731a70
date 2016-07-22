@@ -1,0 +1,13 @@
+package com.sapient.day3;
+
+public class TestAbstractDemo {
+
+	public static void main(String[] args) {
+		
+		RoadBicycle r1 = new RoadBicycle(40);
+		Bicycle b = new Bicycle(40);
+			Bicycle bicycles[] = {};
+
+	}
+
+}
