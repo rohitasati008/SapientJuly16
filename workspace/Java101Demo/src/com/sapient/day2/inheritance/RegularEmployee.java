@@ -5,6 +5,12 @@ public class RegularEmployee extends Employee{
 	double salary;
 	int leavesAllowed;
 	
+	static int regularEmpCount = 0;
+	
+	public static void commonMethod(){
+		System.out.println("Common Method");
+	}
+	
 	@Override
 	public void incrementSalary(){
 		this.salary = this.salary * 1.1;
@@ -12,6 +18,7 @@ public class RegularEmployee extends Employee{
 	
 	public RegularEmployee(int id, String name, double salary) {
 		super(id, name);
+		regularEmpCount++;
 		this.salary = salary;
 	}
 	
@@ -27,6 +34,10 @@ public class RegularEmployee extends Employee{
 		return "RegularEmployee [salary=" + salary + ", id=" + id + ", name="
 				+ name + "]";
 	}
+
+	
+
+	
 
 
 

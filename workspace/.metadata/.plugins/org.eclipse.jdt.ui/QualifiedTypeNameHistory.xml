@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sapient.day2.inheritance.RegularEmployee"/>
+<fullyQualifiedTypeName name="com.sapient.day2.inheritance.ContractualEmployee"/>
+</qualifiedTypeNameHistroy>

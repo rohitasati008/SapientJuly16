@@ -1,6 +1,6 @@
 package com.sapient.day2.inheritance;
 
-public class Employee {
+abstract public class Employee {
 	
 	int id;
 	String name;
@@ -8,9 +8,12 @@ public class Employee {
 		
 	}
 	
-	public void incrementSalary(){
-		
+	public void approveLeaves(){
+		System.out.println("Approving leave for any category");
 	}
+	
+	abstract public void incrementSalary();
+	
 	public Employee(int id, String name) {
 		this.id = id;
 		this.name = name;
