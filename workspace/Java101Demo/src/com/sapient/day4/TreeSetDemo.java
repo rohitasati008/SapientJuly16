@@ -29,6 +29,9 @@ public class TreeSetDemo {
 		Employee e3 = new Employee(3,"Sankaran", "Kumar", 22232.0);
 		Employee e4 = new Employee(45,"Priya", "Kumar", 82232.0);
 		
+		
+		
+		
 		Set<Employee> employees = new TreeSet<>();
 		employees.add(e1);
 		employees.add(e2);
@@ -36,6 +39,21 @@ public class TreeSetDemo {
 		employees.add(e3);
 		employees.add(e4);
 		
+		
+		for(Employee e : employees){
+			System.out.println(e.name);
+		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		System.out.println(employees);
 	}
 	
