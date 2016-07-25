@@ -8,7 +8,7 @@ public abstract class Bicycle implements IBicycle {
 	}
 	
 	public void changeGear(){
-		System.out.println(ELIGIBILITY_AGE);
+		System.out.println(IBicycle.ELIGIBILITY_AGE);
 		System.out.println("Change gear is common to all");
 	}
 	int speed;
