@@ -1,0 +1,21 @@
+package com.sapient.day3.collections;
+
+public class Employee {
+	int id;
+	String name;
+
+	public Employee(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public static void main(String args[]){
+		Employee emp1 = new Employee(12, "Ravi");
+		Employee emp2 = new Employee(12, "Ravi");
+		
+		boolean result = emp1.equals(emp2);
+		System.out.println(result);
+	}
+
+}

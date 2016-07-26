@@ -1,0 +1,37 @@
+package com.sapient.day4.exceptions;
+
+public class ExceptionsDemo {
+
+	public static void m2() {
+		
+			Integer i = null;
+			i.compareTo(3);
+		
+		
+		
+		
+	}
+
+	public static void m1() {
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		m2();
+	}
+
+	public static void main(String[] args) {
+
+		m1();
+		System.out.println("All well that ends well");
+	}
+
+}

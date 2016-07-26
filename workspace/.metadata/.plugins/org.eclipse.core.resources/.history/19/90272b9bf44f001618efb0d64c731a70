@@ -1,0 +1,31 @@
+package com.sapient.day3.collections;
+
+import java.util.ArrayList;
+
+class Fruit{
+	Fruit(String name){
+		this.name = name;
+	}
+	String name;
+}
+
+public class ListDemo {
+	
+	
+
+	public static void main(String[] args) {
+	
+		ArrayList fruits = new ArrayList();
+		/*fruits.add("Apple");
+		fruits.add("Orange");
+		fruits.add("Grapes");*/
+		fruits.add(new Fruit("Apple"));
+		fruits.add(new Fruit("Orange"));
+		fruits.add(new Fruit("Grapes"));
+		
+		System.out.println(fruits.contains("Apple"));
+		
+
+	}
+
+}

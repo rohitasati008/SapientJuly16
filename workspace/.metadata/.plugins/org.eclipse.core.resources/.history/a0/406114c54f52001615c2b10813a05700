@@ -1,0 +1,16 @@
+package com.sapient.day4.problem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CacheDemo {
+
+	public static void main(String[] args) {
+		
+		Atm atm1 = new Atm("GK");
+		Atm atm2 = new Atm("Def Col");
+		List<Atm> atms = new ArrayList<>();
+
+	}
+
+}

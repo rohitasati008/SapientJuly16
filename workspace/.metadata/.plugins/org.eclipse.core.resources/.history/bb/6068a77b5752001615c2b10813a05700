@@ -1,0 +1,50 @@
+package com.sapient.day4.exceptions;
+
+public class ExceptionsDemo {
+
+	public static void m2() throws Exception {
+		
+			Integer i = null;
+			
+			
+			if(i!=null){
+				i.compareTo(3);
+			}
+			else{
+				throw new Exception("Why are passing i as null");
+			}
+			
+		
+		
+		
+		
+	}
+
+	public static void m1() {
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			m2();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+
+		m1();
+		System.out.println("All well that ends well");
+	}
+
+}

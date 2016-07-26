@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.sapient.day2.inheritance.RegularEmployee"/>
 <fullyQualifiedTypeName name="com.sapient.day2.inheritance.ContractualEmployee"/>
+<fullyQualifiedTypeName name="com.sapient.day3.RoadBicycle"/>
+<fullyQualifiedTypeName name="com.sapient.day3.MountainBiCycle"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.sapient.day2.Employee"/>
 </qualifiedTypeNameHistroy>

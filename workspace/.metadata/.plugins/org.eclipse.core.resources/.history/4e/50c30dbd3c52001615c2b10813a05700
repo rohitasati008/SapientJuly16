@@ -1,0 +1,7 @@
+package com.sapient.day4;
+
+import java.util.Comparator;
+
+public class SalaryComparator implements Comparator<Employee> {
+
+}

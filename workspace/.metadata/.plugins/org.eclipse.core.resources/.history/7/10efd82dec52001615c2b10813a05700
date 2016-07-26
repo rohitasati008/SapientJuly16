@@ -1,0 +1,15 @@
+package com.sapient.day5;
+
+public class Features15 {
+
+	public static void main(String[] args) {
+		
+		Integer i = new Integer(3);
+		
+		Integer x = 5;
+		
+		int result = i;
+
+	}
+
+}

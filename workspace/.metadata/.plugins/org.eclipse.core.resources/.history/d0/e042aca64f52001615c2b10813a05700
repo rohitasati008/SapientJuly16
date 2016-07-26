@@ -1,0 +1,11 @@
+package com.sapient.day4.problem;
+
+public class CacheDemo {
+
+	public static void main(String[] args) {
+		
+		Atm atm1 = new Atm("GK");
+
+	}
+
+}

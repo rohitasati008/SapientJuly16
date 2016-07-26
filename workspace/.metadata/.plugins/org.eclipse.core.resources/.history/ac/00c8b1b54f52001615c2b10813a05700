@@ -1,0 +1,13 @@
+package com.sapient.day4.problem;
+
+public class CacheDemo {
+
+	public static void main(String[] args) {
+		
+		Atm atm1 = new Atm("GK");
+		Atm atm2 = new Atm("Def Col");
+		List<Atm> atms = new ArrayList<>();
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.sapient.day4.problem;
+
+public class Atm {
+	String location;
+
+	public Atm(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

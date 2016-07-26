@@ -1,0 +1,60 @@
+package com.sapient.day5;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCDemo {
+
+	private static Connection con;
+
+	public static void main(String[] args) {
+		
+		//Step 1
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+//		Step 2 - Create Connection
+		
+		System.out.println("Driver loaded");
+			try {
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sapientdb","root","root");
+				Statement stmt = con.createStatement();
+				stmt.executeUpdate("insert into user values(2,'Priya')");
+				System.out.println("Inserting to DB...");
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			finally{
+				
+				try {
+					con.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+			System.out.println("Connection done sucessfully");
+
+			
+//			Step 3 - Insert into DB
+			
+		
+			
+			
+			
+			
+			
+			
+			
+		
+	}
+}

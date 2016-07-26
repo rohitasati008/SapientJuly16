@@ -1,0 +1,22 @@
+package com.sapient.day4;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		
+		Map<Long, Employee> employeeMap = new HashMap<>();
+		
+
+			/*Map<Long, String> employeeMap = new HashMap<>();
+			
+			employeeMap.put(9999888333l, "Ravi");
+			employeeMap.put(9999888444l, "Arun");
+			
+			System.out.println(employeeMap);*/
+
+	}
+
+}

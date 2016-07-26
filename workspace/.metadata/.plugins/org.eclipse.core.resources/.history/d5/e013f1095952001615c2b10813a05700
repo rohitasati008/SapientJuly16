@@ -1,0 +1,34 @@
+package com.sapient.day4.exceptions;
+
+public class ExceptionsDemo2 {
+	
+	public static void m1(String bookName){
+		
+		try {
+			
+			if(bookName==null){
+				throw new Exception("Book not found");
+			}
+			
+			System.out.println("Book name is " + bookName);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			System.out.println("This always executes");
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+		
+		
+		System.out.println("All well");
+
+	}
+
+}

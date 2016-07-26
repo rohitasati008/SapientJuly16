@@ -1,0 +1,7 @@
+package com.sapient.day4.problem;
+
+public class Branch {
+	String location;
+	boolean mainBranch;
+
+}

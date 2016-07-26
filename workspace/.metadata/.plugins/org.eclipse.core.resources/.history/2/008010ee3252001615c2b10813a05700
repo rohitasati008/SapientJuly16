@@ -1,0 +1,24 @@
+package com.sapient.day4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SortDemo {
+
+	public static void main(String[] args) {
+		Employee e1 = new Employee(23,"Ravi");
+		Employee e2 = new Employee(23,"Amit");
+		Employee e3 = new Employee(23,"Sankaran");
+		Employee e4 = new Employee(23,"Priya");
+		
+		List list = new ArrayList();
+		list.add(e1);
+		list.add(e2);
+		list.add(e3);
+		list.add(e4);
+		
+		System.out.println();
+		
+	}
+
+}

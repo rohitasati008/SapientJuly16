@@ -1,0 +1,9 @@
+package com.sapient.day4.exceptions;
+
+public class ExceptionsDemo {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

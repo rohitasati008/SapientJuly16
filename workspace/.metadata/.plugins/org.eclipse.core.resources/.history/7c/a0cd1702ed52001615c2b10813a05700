@@ -1,0 +1,25 @@
+package com.sapient.day5;
+
+public class Features15 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	static int add(int... num){
+		int result = 0;
+		for(int i: num){
+			result+=i;
+		}
+		return result;
+	}
+	
+	/*int add(int x, int y){
+		return x + y;
+	}
+	int add(int x, int y, int z){
+		return x + y + z;
+	}
+*/
+}

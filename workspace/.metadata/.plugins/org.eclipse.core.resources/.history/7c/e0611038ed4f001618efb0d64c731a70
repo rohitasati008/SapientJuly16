@@ -1,0 +1,15 @@
+package com.sapient.day3;
+
+public class GCDemo {
+	public static void main(String[] args) {
+		String str = "Ravi";
+		
+		 
+	
+		 for(int i=0;i<100000000;i++){
+			 str = str + i;
+		 }
+		
+		System.out.println(str);
+	}
+}

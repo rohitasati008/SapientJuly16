@@ -1,0 +1,26 @@
+package com.sapient.day5;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JDBCDemo {
+
+	public static void main(String[] args) {
+		
+		//Step 1
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+//		Step 2 - Create Connection
+		
+		
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sapientdemodb","root","root");
+
+		
+
+}

@@ -1,0 +1,8 @@
+package com.sapient.day3;
+
+public class GCDemo {
+	public static void main(String[] args) {
+		String str = "Ravi";
+		String str1 = str.substring(2);
+	}
+}

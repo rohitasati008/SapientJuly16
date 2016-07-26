@@ -1,0 +1,14 @@
+package com.sapient.day3.collections;
+
+import java.util.ArrayList;
+
+public class ListDemo {
+
+	public static void main(String[] args) {
+	
+		ArrayList fruits = new ArrayList();
+		fruits.add("Apple");
+
+	}
+
+}

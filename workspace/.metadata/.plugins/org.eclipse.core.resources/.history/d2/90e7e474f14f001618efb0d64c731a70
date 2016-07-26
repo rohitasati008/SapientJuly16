@@ -1,0 +1,11 @@
+package com.sapient.day3.collections;
+
+public class ListDemo {
+
+	public static void main(String[] args) {
+	
+		ArrayList fruits = new ArrayList();
+
+	}
+
+}
