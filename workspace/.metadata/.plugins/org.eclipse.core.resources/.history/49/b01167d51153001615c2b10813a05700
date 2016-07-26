@@ -1,0 +1,10 @@
+package com.sapient.day5;
+
+public class TestComposition {
+
+	
+	public static void main(String[] args) {
+		Address add1 = new Address(123, "GJ");
+		Address add1 = new Address(4123, "KJds");
+	}
+}

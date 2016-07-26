@@ -6,6 +6,8 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.sapient.day5.Employee;
+
 public class SortDemo {
 
 	public static void main(String[] args) {

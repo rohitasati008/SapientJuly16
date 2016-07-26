@@ -1,0 +1,8 @@
+package com.sapient.day5;
+
+public class Address {
+	
+	int houseNumber;
+	String locality;
+
+}

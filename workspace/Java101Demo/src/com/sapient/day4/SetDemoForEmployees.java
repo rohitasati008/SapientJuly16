@@ -3,6 +3,8 @@ package com.sapient.day4;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.sapient.day5.Employee;
+
 public class SetDemoForEmployees {
 
 	public static void main(String[] args) {

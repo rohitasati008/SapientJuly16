@@ -2,6 +2,8 @@ package com.sapient.day4;
 
 import java.util.Comparator;
 
+import com.sapient.day5.Employee;
+
 public class SalaryComparator implements Comparator<Employee> {
 
 	@Override
