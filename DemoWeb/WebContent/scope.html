@@ -1,0 +1,41 @@
+<html>
+<body>
+    
+    
+    <div>User Name : <span id="username"></span></div>
+    
+   <button onclick="makeRequest()">Load User Data</button> 
+    <script>
+    
+        
+           var httpRequest;
+  
+   function makeRequest() {
+   var url = 'http://127.0.0.1:50540/dummy.json'
+      httpRequest = new XMLHttpRequest();
+    
+	
+    httpRequest.onreadystatechange = alertContents;
+    httpRequest.open('GET', url);
+       var dataToSend = {}
+    httpRequest.send();
+  }
+ function alertContents() {
+    if (httpRequest.readyState === 4) {
+      if (httpRequest.status === 200) {
+        console.log(httpRequest.responseText);
+        
+          var data = JSON.parse(httpRequest.responseText)
+          console.log(data.name)
+          
+          
+        document.getElementById('username').innerHTML = data.name
+      } else {
+        alert('There was a problem with the request.');
+      }
+    }
+  }
+    </script>
+</body>
+
+</html>

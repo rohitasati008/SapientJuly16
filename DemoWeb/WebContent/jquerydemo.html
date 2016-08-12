@@ -1,0 +1,33 @@
+<html>
+<body>
+    
+    
+    <div id="demo">Some text</div>
+    
+    <button onclick=loadData()>Load Data</button>
+    
+<!--    Step1. Get JQuery library--> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+    //JQuery stuff
+       
+        function loadData(){
+            
+        $.ajax(
+            
+            {url: "dummy.json", 
+                success: function(result){
+                    console.log(result.name)
+                    $("#demo").html(result.name);
+                }
+            });
+            
+            
+        }
+        
+//        
+//        console.log($('#demo'))
+//        $('#demo').text('Change the text')
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Basic JS</title>
+</head>
+    
+<body>
+    <h1>Calculator</h1>
+    
+    <input type=text name=oper1 placeholder="Enter Oper1">
+    <input type=text name=oper2 placeholder="Enter Oper2">
+    <button onclick=calc.mul()> * </button>
+    <button onclick=calc.add()> + </button>
+    
+    <h3>Result is: <span id="r1"></span></h3>
+    <script>
+        
+       
+        var calc = {};
+        
+        calc.mul = function(){
+            var x = document.getElementsByName("oper1")[0].value;
+            var y = document.getElementsByName("oper2")[0].value;
+            var result =  x*y;
+            document.getElementById('r1').innerHTML = result;
+        }
+        
+        calc.add = function(){
+            var x = document.getElementsByName("oper1")[0].value;
+            var y = document.getElementsByName("oper2")[0].value;
+            var result =  parseInt(x) + parseInt(y);
+            document.getElementById('r1').innerHTML = result;
+            
+        }
+      
+    
+    </script>
+    
+</body>
+</html>
