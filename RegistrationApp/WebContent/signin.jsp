@@ -9,7 +9,7 @@
 <body>
 <h2>Sign In</h2>
 <form method="POST" action="AuthServlet">
-	<input type="text" name="username" placeholder="Enter UserName"/>
+	<input type="text" name="username" value=<%=request.getAttribute("uname") %> placeholder="Enter UserName"/>
 	<input type="password" name="pwd" />
 	<input type="submit" value="Sign In"/>
 </form>

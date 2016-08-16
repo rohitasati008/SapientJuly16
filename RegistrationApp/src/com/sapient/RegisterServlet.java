@@ -19,6 +19,18 @@ public class RegisterServlet extends HttpServlet {
 	
 	Map<String, User> usersMap = new HashMap<>();
 	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String respStr = "";
+		String user = request.getParameter("username");
+		if(usersMap.containsKey(user)){
+			respStr = "{\"exists\":true}";
+		}
+		else{
+			respStr = "{\"exists\":false}";
+		}
+		response.setContentType("application/json");
+		response.getWriter().println(respStr);
+	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("pwd");
@@ -29,12 +41,14 @@ public class RegisterServlet extends HttpServlet {
 		if(!usersMap.containsKey(username)){
 			usersMap.put(username, user);
 			System.out.println(usersMap);
+			request.setAttribute("uname", username);
 			
 			RequestDispatcher rd = request.getRequestDispatcher("signin.jsp");
 			rd.forward(request, response);
 		}
 		else{
 			RequestDispatcher rd = request.getRequestDispatcher("register.html");
+//			request.setAttribute("message", "Registration failed - Try with another user");
 			rd.forward(request, response);
 			
 		}
