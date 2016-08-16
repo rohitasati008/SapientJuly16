@@ -1,0 +1,40 @@
+<html>
+<body>
+    
+    
+    <h1>Sign up</h1>
+    <p id="demo"></p>
+    <input type=text name="username" id="username"/>
+    <input type=password name="pwd" id="pwd"/>
+    <button onclick="login()">Login</button>
+<!--    Step1. Get JQuery library--> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+    //JQuery stuff       
+        function login(){            
+        var obj = {};
+            obj.username = $('#username').val();
+            obj.pwd = $('#pwd').val();      
+        $.ajax({
+                url: "http://127.0.0.1:56540/auth.json", 
+                method: 'GET',
+                data: obj,
+                success: function(result){
+                    console.log(result.auth)
+                    var message = "Invalid User/Name Password"
+                    if(result.auth){
+                        message = "Successfully logged in"
+                    }
+                    $("#demo").html(message);
+                }
+            });
+            
+            
+        }
+        
+//        
+//        console.log($('#demo'))
+//        $('#demo').text('Change the text')
+    </script>
+</body>
+</html>
