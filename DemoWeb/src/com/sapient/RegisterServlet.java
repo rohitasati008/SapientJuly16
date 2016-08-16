@@ -12,20 +12,26 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class SignInServlet
  */
-@WebServlet("/SignInServlet")
-public class SignInServlet extends HttpServlet {
+@WebServlet("/RegisterServlet")
+public class RegisterServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("pwd");
+		String confirmPassword = request.getParameter("cpwd");
 		
-		String responseStr = "Failure";
-		if(username.equals(password)){
-			responseStr = "Success";
-		}
+		User user = new User(username, password, confirmPassword);
 		
+		response.setContentType("text/html");
+//		String jsonStr = "{\"auth\": true}";
 		PrintWriter pw = response.getWriter();
-		pw.println(responseStr);
+		pw.println("<html>");
+		pw.println("<body>");
+		pw.println("<table border=\"1\">");
+		pw.println("<tr><td>" + user.username + "</td></tr>");
+		pw.println("</table>");
+		pw.println("</body>");
+		pw.println("</html>");
 	}
 
 }
