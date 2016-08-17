@@ -36,6 +36,28 @@ public class UserDAO {
 		System.out.println("Connection Created...");
 		return con;
 	}
+	
+	public int addEmployee(User user) {
+		
+		Connection con = getConnection();
+		
+		int result = 0;
+		PreparedStatement stmt;
+		try {
+			stmt = con.prepareStatement("insert into user values(?,?)");
+			stmt.setString(1, user.getUsername());
+			stmt.setString(2, user.getPwd());
+			
+			result = stmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+		
+		System.out.println("Inserted to DB...");
+		return result;
+
+	}
 
 	
 

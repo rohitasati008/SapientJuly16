@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <style>
 .success {
 	border: 1px solid green;
@@ -17,15 +18,36 @@
 <div id="message" style="background-color: red"></div>
 <form method="POST" action="RegisterServlet">
 	<input type="text" id="username" name="username" onblur="validateExistingUser()"/>
-	<input type="password" name="pwd" />
-	<input type="text" name="cpwd" />
+	<div id="rightimg"></div>
+	<input type="password" name="pwd" id="pwd"/>
+	<input type="text" name="cpwd" id="cpwd" onblur="validatePassword()" />
+	<div id="rightimg2"></div>
 	<input type="submit" value="Register"/>
 </form>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script>
     //JQuery stuff
+    
+    		function validatePassword(){
+    			var pwd= $("#pwd").val();
+    			var cpwd= $("#cpwd").val();
+    			if(pwd === cpwd){
+    				$("#rightimg2").addClass("glyphicon glyphicon-ok")
+    			}
+    			else{
+    				
+    			}
+    	
+    		}
        
         function validateExistingUser(){
+        	    if($("#username").val().length >= 6){
+        	    		console.log('Greater than 6.. take some decision')
+        	    }
+        	    else{
+        	    		console.log('Less than 6.. take some decision')
+            	    
+        	    }
     			console.log("blur event")
     			$("#message").html("");
     			var myurl = "RegisterServlet?username=" + $("#username").val();
@@ -46,6 +68,7 @@
                     }
                     else{
                     		$("#username").addClass("success");
+                    		$("#rightimg").addClass("glyphicon glyphicon-ok")
                     }
                     		 }
             });

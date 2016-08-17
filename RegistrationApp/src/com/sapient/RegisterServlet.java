@@ -42,9 +42,10 @@ public class RegisterServlet extends HttpServlet {
 		
 		User user = new User(username, password, confirmPassword);
 //		Write DB code find if user exists, if no insert a record
-		if(!usersMap.containsKey(username)){
-			usersMap.put(username, user);
-			System.out.println(usersMap);
+//		if(!usersMap.containsKey(username)){
+		if(userDao.addEmployee(user) > 0){
+//			usersMap.put(username, user);
+//			System.out.println(usersMap);
 			request.setAttribute("uname", username);
 			
 			RequestDispatcher rd = request.getRequestDispatcher("signin.jsp");
