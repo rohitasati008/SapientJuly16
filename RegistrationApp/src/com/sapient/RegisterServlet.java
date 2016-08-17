@@ -18,11 +18,15 @@ import javax.servlet.http.HttpServletResponse;
 public class RegisterServlet extends HttpServlet {
 	
 	Map<String, User> usersMap = new HashMap<>();
-	
+	UserDAO userDao = new UserDAO();
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String respStr = "";
 		String user = request.getParameter("username");
-		if(usersMap.containsKey(user)){
+		
+		boolean result = userDao.checkUserExists(user);
+		
+//		if(usersMap.containsKey(user)){
+		if(result){
 			respStr = "{\"exists\":true}";
 		}
 		else{

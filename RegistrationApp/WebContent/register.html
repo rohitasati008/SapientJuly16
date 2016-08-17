@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+.success {
+	border: 1px solid green;
+}
+.failure {
+	border: 1px solid red;
+}
+</style>
 </head>
 <body>
 <h2>Register yourself</h2>
@@ -19,6 +27,7 @@
        
         function validateExistingUser(){
     			console.log("blur event")
+    			$("#message").html("");
     			var myurl = "RegisterServlet?username=" + $("#username").val();
     			console.log(myurl);
     		
@@ -32,7 +41,11 @@
                     console.log(result.exists)
                     if(result.exists){
                     		$("#message").html("User already exists -- Try with a new user name");
-                        
+                    		$('input[type="submit"]').attr('disabled','disabled');
+                    		$("#username").addClass("failure");
+                    }
+                    else{
+                    		$("#username").addClass("success");
                     }
                     		 }
             });
